@@ -1,6 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/valorant");
 @import url(https://db.onlinewebfonts.com/c/0201813274259c3d4f78760d19270bab?family=DIN+Next+LT+W04+Medium);
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ header {
   width: 100%;
   z-index: 3000000;
   height: 80px;
-  position: sticky;
+  position: fixed;
 }
 
 #nav-container {
@@ -38,7 +38,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  gap: 70px;
+  gap: 45px;
 }
 
 #nav-container .buttons i,
@@ -89,20 +89,21 @@ button {
 #hero .hero {
   position: absolute;
   top: 25%;
-  left: 35%;
+  left: 30%;
   text-align: center;
   color: white;
-  font-family: "VALORANT";
   text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.5);
 }
 
 #hero .hero p:nth-child(1) {
   font-size: 100px;
+  font-family: "VALORANT";
 }
 
 #hero .hero p:nth-child(2) {
   font-size: 16px;
   margin: -7rem 5rem;
+  font-family: "DIN Next LT W04 Medium";
 }
 
 #hero .hero button {
@@ -120,4 +121,110 @@ button {
     rgb(255, 48, 64) 0.01%,
     rgb(255, 125, 102) 100%
   );
+}
+
+#news {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+#news .desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -2.7rem;
+}
+
+.desc h2 {
+  font-size: 75px;
+  font-family: "Poppins";
+  font-weight: 800;
+  color: #ff4655;
+  font-stretch: extra-expanded;
+  z-index: 1000;
+  margin-left: 1.7rem;
+}
+
+.desc a {
+  margin-top: -4rem;
+  text-decoration: none;
+  color: #ff4655;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+#news .news-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
+#news .news-container .box img {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+}
+
+#news .news-container .box {
+  margin-top: -115px;
+  margin-left: 2rem;
+}
+
+.news-container .box .content p,
+span {
+  font-size: 12px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.news-container .box .content span {
+  color: crimson;
+  margin-left: 1.5rem;
+}
+
+.news-container .box .content h3 {
+  font-size: 20px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+#episode img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: -10;
+  margin-top: 2rem;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#episode .current {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 210%;
+  left: 10%;
+}
+
+#episode .current h3,
+#episode .current h1,
+#episode .current button {
+  line-height: 1;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+#episode .current h3,
+#episode .current h1 {
+  font-size: 40px;
+}
+
+#episode .current button {
+  padding: 1rem;
+  border: none;
+  background-color: #ff4655;
+  width: 250px;
 }
