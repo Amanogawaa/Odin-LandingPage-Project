@@ -1,0 +1,123 @@
+@import url("https://fonts.cdnfonts.com/css/valorant");
+@import url(https://db.onlinewebfonts.com/c/0201813274259c3d4f78760d19270bab?family=DIN+Next+LT+W04+Medium);
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "DIN Next LT W04 Medium";
+  background: black;
+  color: white;
+  border-bottom: 2px solid rgba(51, 51, 51, 0.25);
+  line-height: normal;
+  text-align: left;
+  display: flex;
+  width: 100%;
+  z-index: 3000000;
+  height: 80px;
+  position: sticky;
+}
+
+#nav-container {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav-container .logo img {
+  width: 65px;
+}
+
+#nav-container .nav-item ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  gap: 70px;
+}
+
+#nav-container .buttons i,
+button {
+  margin-left: 5px;
+}
+
+.buttons .fa-search {
+  font-size: 20px;
+  border: 1px #bcbcbcc2 hidden;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #bcbcbcc2;
+}
+
+.buttons button {
+  color: #111;
+  font-family: "VALORANT";
+  border: none;
+  background: linear-gradient(
+    135deg,
+    rgb(255, 51, 66) 0%,
+    rgb(255, 48, 64) 0.01%,
+    rgb(255, 125, 102) 100%
+  );
+  text-align: center;
+  line-height: 120%;
+  position: relative;
+  z-index: 0;
+  height: 35px;
+  border-radius: 12px;
+  padding: 8px 16px;
+  color: #111;
+  margin-left: 10px;
+}
+
+#hero #poster {
+  bottom: 0;
+  height: 49rem;
+  max-height: 100%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: -999;
+}
+
+#hero .hero {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  text-align: center;
+  color: white;
+  font-family: "VALORANT";
+  text-shadow: 0 0 0.75em rgba(0, 0, 0, 0.5);
+}
+
+#hero .hero p:nth-child(1) {
+  font-size: 100px;
+}
+
+#hero .hero p:nth-child(2) {
+  font-size: 16px;
+  margin: -7rem 5rem;
+}
+
+#hero .hero button {
+  font-family: "VALORANT";
+  color: #111;
+  margin-top: 200px;
+  width: 150px;
+  border: 0;
+  cursor: pointer;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    rgb(255, 51, 66) 0%,
+    rgb(255, 48, 64) 0.01%,
+    rgb(255, 125, 102) 100%
+  );
+}
