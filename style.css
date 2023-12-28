@@ -157,7 +157,6 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex: 1;
 }
 
 #news .news-container .box img {
@@ -227,4 +226,116 @@ span {
   border: none;
   background-color: #ff4655;
   width: 250px;
+}
+
+.limits {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.limits .about {
+  width: 35%;
+  border: none;
+  margin: -4rem 1rem;
+  text-align: center;
+  font-family: "POPPINS";
+  line-height: 2;
+}
+
+.limits .about h3 {
+  font-weight: 700;
+}
+
+.limits .about button {
+  font-family: "poppins";
+  font-weight: 600;
+  color: #111;
+  width: 50%;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(
+    135deg,
+    rgb(255, 51, 66) 0%,
+    rgb(255, 48, 64) 0.01%,
+    rgb(255, 125, 102) 100%
+  );
+}
+
+h2 {
+  font-size: 75px;
+  font-family: "VALORANT";
+  font-weight: 800;
+  color: #333;
+  font-stretch: extra-expanded;
+  z-index: 1000;
+  margin-left: 1.7rem;
+}
+
+.download {
+  margin-top: 5.5rem;
+  width: 100%;
+  background: #333;
+  height: 100px;
+}
+
+.down {
+  margin-top: 2.5rem;
+  margin-left: 36rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: "POPPINS";
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+  height: 250px;
+}
+
+.footer-nav .item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+}
+
+.footer-nav .item-container .footer-item {
+  border: none;
+  background: rgba(128, 128, 128, 0.2);
+  padding: 1rem;
+  font-size: 18px;
+  color: white;
+  border-radius: 20px;
+}
+
+.footer-nav .credits {
+  color: white;
+  font-family: "Poppins";
+  font-size: 10px;
+  margin-top: 1.5rem;
+}
+
+.footer-nav .cond {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+
+.footer-nav .cond a {
+  text-decoration: none;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 600;
 }
